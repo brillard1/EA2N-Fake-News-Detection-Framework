@@ -18,16 +18,8 @@ class WikiTag:
         self.cn = {}
 
         tagme_tokens = [
-        '5fa6833f-da41-4c7a-8a9f-e6b883be897c-843339462',
-        '9f0fefe0-39b0-4338-97ee-29ce50ef2c40-843339462',
-        '81b9d4b5-e41a-4dcc-b269-a93a7b96bead-843339462',
-        '6c2c5994-6225-4fd0-ac15-2bfc1e2a63e8-843339462',
-        'f26b872f-1ee8-4c66-9f39-ffadb627d712-843339462',
-        '9265d91c-cb33-4db8-b273-b1e19d0d15dc-843339462', 
-        '06b19cd0-8947-4387-b960-8747b62a94eb-843339462',
-        'd6b04e41-16f4-4a8c-be25-d0008c6a915a-843339462',
-        '8ca9331f-0c2d-4592-ae50-107ed44bff54-843339462',
-        'b1b942a1-a251-4bb1-b16a-590f1c33b05e-843339462']
+        '...add_token_ids_here...'
+        ]
 
         assert token_index < len(tagme_tokens)
 
