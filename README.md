@@ -82,7 +82,7 @@ bash wikidata_integration.sh
 ---
 The vocab will be created from AMR entities and the linked Wikidata paths
 ```
-sh ./scrips/prepare.sh
+sh ./prepare/prepare.sh
 ```
 #### Combine the divided files
 ---
