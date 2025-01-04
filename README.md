@@ -33,8 +33,11 @@ In this module we'll download the dataset and generate AMR linked with WikiData 
     ```
     python preprocess.py
     ```
-
-- Prepare data for train, dev and test:
+- Split data into train, dev and test using
+    ```
+    python scripts/parser_fnn.py {dataset_folder} {politifact/gossipcop}
+    ```
+- Prepare data for train, dev and test
     ```
     cd ..
     ./scripts/prepare_data.sh -v 2 -p [project_path]
@@ -43,14 +46,15 @@ In this module we'll download the dataset and generate AMR linked with WikiData 
 
     - Start a CoreNLP server.
 
-    - Annotate news article sentences:
+    - Annotate news article sentences
         ```
         ./scripts/annotate_features.sh amr_data/amr_2.0/csqa
         ```
-- Preprocess this data:
+- Preprocess this data
     ```
     ./scripts/preprocess_2.0.sh
     ```
+    this step requires [stog](https://github.com/sheng-z/stog) folder which is included in our codebase
 - Generate AMR for news articles using:
     ```
     cd prepare/
@@ -82,7 +86,7 @@ bash wikidata_integration.sh
 ---
 The vocab will be created from AMR entities and the linked Wikidata paths
 ```
-sh ./scrips/prepare.sh
+sh ./prepare/prepare.sh
 ```
 #### Combine the divided files
 ---
